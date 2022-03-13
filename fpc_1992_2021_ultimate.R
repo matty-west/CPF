@@ -15,7 +15,7 @@ setwd("/m13/Documents/R")
 #Note: check.names = False overrides the check.names argument of prepending X to numbers
 #Note: fileEncoding="UTF-8-BOM" solves the bizarre character input to "Item" cell
 fpc <- read.csv("FPC_1992_2021.csv", check.names = FALSE, fileEncoding="UTF-8-BOM")
-#View data frame
+#View data
 fpc
 
 #Alternative way to load FPC data by selecting via file explorer UI
