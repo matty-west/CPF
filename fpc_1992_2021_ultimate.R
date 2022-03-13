@@ -8,7 +8,7 @@ rm(list = ls())
 
 getwd()
 #Set the working directory
-setwd("C:/Users/matt/Documents/R")
+setwd("/m13/Documents/R")
 
 #Import data
 #Note: assigned the read.csv to variable fpc (food price change)
@@ -18,7 +18,7 @@ fpc <- read.csv("FPC_1992_2021.csv", check.names = FALSE, fileEncoding="UTF-8-BO
 #View data frame
 fpc
 
-#Alternative way to load FPC data by selecting via windows file explorer
+#Alternative way to load FPC data by selecting via file explorer UI
 fpc <- read.csv(file.choose(), check.names = FALSE, fileEncoding="UTF-8-BOM")
 
 #Quickly reference plotting documentation
@@ -34,7 +34,8 @@ library(ggplot2)  #Load ggplot2
 library(plotly)  #Load the plotly package
 library(quantmod) #Load the quantmod package
 
-#melt fpcdata frame
+#melt fpcdata frame to collapse the row of years into one column
+#conserve "Item" column and enumerate newly created "Years" column with corresponding values
 fpc_long <- melt(data = fpc, 
                  id.vars = c("Item"),
                  variable.name = "Year",
