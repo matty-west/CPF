@@ -1,4 +1,4 @@
-#This R-script will import a cleaned  csv dataset for percent change in CPI of various food items
+#This R-script will import a cleaned csv dataset for percent change in CPI of various food items
 #Data is from USDA ERS
 #After loading the csv file, it will be restructured with melt()
 #Restructured data will be plotted with ggplot2 and plotly
