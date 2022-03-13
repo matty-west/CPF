@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/matty-west/CPF/edit/gh-pag
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
-
+{% include fpc_1992_2021_ultimate.html caption="Double click any food item to set baseline. Compare other food items by clicking the legend" %}
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
