@@ -24,15 +24,19 @@ fpc <- read.csv(file.choose(), check.names = FALSE, fileEncoding="UTF-8-BOM")
 #Quickly reference plotting documentation
 ?plot
 
-install.packages("plotly")  #Install plotly package
-install.packages("ggplot2")  #Install ggplot2 package
-install.packages("reshape2")  #Install reshape package
-install.packages("quantmod")  #Install quantmod package
+install.packages("plotly") 
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("quantmod")
 
-library(reshape2)  #Load reshape2
-library(ggplot2)  #Load ggplot2 
-library(plotly)  #Load the plotly package
-library(quantmod) #Load the quantmod package
+load_libraries <- function() {
+  library(reshape2) 
+  library(ggplot2)  
+  library(plotly)  
+  library(quantmod) 
+  print("LIBRARIES LOADED")
+}
+load_libraries()
 
 #melt fpcdata frame to collapse the row of years into one column
 #conserve "Item" column and enumerate newly created "Years" column with corresponding values
